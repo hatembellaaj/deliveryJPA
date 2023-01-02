@@ -15,7 +15,7 @@ import com.csf.delivery.service.PlateService;
 
 //mark class as Controller  
 @RestController  
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class PlateController  
 {  
 	//autowire the BooksService class  
@@ -42,7 +42,7 @@ public class PlateController
 		return pS.getPlateByName(name);  
 	} 	
 	
-	//creating a get mapping that retrieves the detail of a specific Plate  
+	//creating a get mapping that retrieves all plates delivered by the restaurant   
 	@GetMapping("/PlateRestaurant/{id}")  
 	private List<Plate> getPlateByName(@PathVariable("id") int id)   
 	{  

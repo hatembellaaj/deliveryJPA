@@ -16,7 +16,7 @@ import com.csf.delivery.service.RestaurantService;
 
 //mark class as Controller  
 @RestController  
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class RestaurantController  
 {  
 	//autowire the BooksService class  
